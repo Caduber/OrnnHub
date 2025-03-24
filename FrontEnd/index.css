@@ -1,0 +1,100 @@
+/*
+cinza = #4E4E4E
+cinza = 3A3638
+preto = 1F181B
+vermelho escuro = #552627
+vermelho medio = #7F3029
+azul = #7295AA
+*/
+
+body
+{
+    margin: 0px;
+    background-color: #1F181B;
+    color: #fcfcfc;
+    font-family: Arial;
+    font-size: small;
+}
+
+header
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #552627;
+    height: 80px;
+}
+
+hr
+{
+    margin: 0px;
+    border-color: #c83914;  
+    border-bottom-width: 2px;
+}
+
+#inputs
+{
+    background-color: #7F3029;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#inputs input
+{
+    color: #fcfcfc;
+    border-style: none;
+    border-radius: 3px;
+    background-color: #7F3029;
+}
+
+#inputs input:focus
+{
+    border-style:none;
+    border-color: #7F3029;
+}
+
+#inputs button
+{
+    color: #fcfcfc;
+    border: none;
+    background-color: #7F3029;
+    margin-left: 20px;
+    border-left: 1px solid #fcfcfc;
+}
+
+#hero
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+#hero h1
+{
+    display: block;
+    /* align-items: center; */
+    /* justify-content: center; */
+    gap: 20px;
+}
+
+#hero h1 img
+{
+    width: 70px;
+    height: 70px;
+}
+
+#skills
+{
+    background-color: #F0F0D1;
+    color: #1F181B;
+    width: 60%;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    gap: 20px;
+}
