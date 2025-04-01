@@ -12,11 +12,25 @@ app.use(express.json()) // importante pra receber o fetch
 const { getPuuid, getHist, getGameData, handleGameData, teste } = require("./app.js")
 
 app.post('/', async (req, res) => {
+  if (req.body != `{}`)
+  {
     teste(req.body["nome"], req.body["tag"]).then((retorno)=>
-    {
-        console.log(retorno)
-        res.send(retorno)
-    })
+      {
+        if (retorno == "erro")
+        {
+          console.log(retorno)
+          res.send({"erro": "erro"})
+        }
+        else
+        {
+          res.send(retorno)
+        }
+      }) 
+  }
+})
+
+app.get("/puuid", async (req, res) => {
+  getPuuid("T1 Cazeus", "lna")
 })
 
 app.listen(3000, () => {
