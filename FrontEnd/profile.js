@@ -145,5 +145,3 @@ async function loadPage()
     }
     document.getElementById("loading").style.display = "none"
 }
-
-loadPage()
