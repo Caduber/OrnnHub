@@ -90,7 +90,7 @@ document.getElementById("btn-pesquisa").addEventListener("click", async function
 
     try
     {
-        let response = await fetch("https://da2c-2804-14d-1884-8451-fd32-82a7-4cb7-c95e.ngrok-free.app/", {method: "POST", headers:{'Accept': 'application/json','Content-Type': 'application/json'}, body: JSON.stringify(payload)}) //sem o headers, o express fica perdido e fica retornando {}
+        let response = await fetch("https://959b-2804-14d-1884-8451-fd32-82a7-4cb7-c95e.ngrok-free.app/", {method: "POST", headers:{'Accept': 'application/json','Content-Type': 'application/json'}, body: JSON.stringify(payload)}) //sem o headers, o express fica perdido e fica retornando {}
         data = await response.json()
 
         //console.log(data)
@@ -123,7 +123,7 @@ async function loadPage()
 
     try
     {
-        let response = await fetch("https://da2c-2804-14d-1884-8451-fd32-82a7-4cb7-c95e.ngrok-free.app/", {method: "POST", headers:{'Accept': 'application/json','Content-Type': 'application/json'}, body: JSON.stringify(payload)}) //sem o headers, o express fica perdido e fica retornando {}
+        let response = await fetch("https://959b-2804-14d-1884-8451-fd32-82a7-4cb7-c95e.ngrok-free.app/", {method: "POST", headers:{'Accept': 'application/json','Content-Type': 'application/json'}, body: JSON.stringify(payload)}) //sem o headers, o express fica perdido e fica retornando {}
         data = await response.json()
 
         //console.log(data)
