@@ -6,5 +6,5 @@ function pesquisa()
     sessionStorage.setItem("nome", nome);
     sessionStorage.setItem("tag", tag);
 
-    window.location.href = "https://caduber.github.io/OrnnHub/FrontEnd/profile.html";
+    window.location.href = "https://caduber.github.io/OrnnHub/profile.html";
 }
